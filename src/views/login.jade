@@ -1,0 +1,17 @@
+extends ./baseTemplates/base.jade
+
+block main_content
+    .login_form
+        form(method="post" action="/user/login")
+            .input_box
+                h5 Username
+                input(type="text" id="username" name="username" pattern="#{pattern}" required)
+            .input_box
+                h5 Password
+                input(type="password" id="password" name="password" pattern="#{pattern}" required)
+            .submit_box
+                input(type="submit" id="submit" value="Log In")
+        
+            
+
+        

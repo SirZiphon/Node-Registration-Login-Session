@@ -1,0 +1,14 @@
+extends ./baseTemplates/base.jade
+
+block main_content
+    .error
+        table
+            tr
+                th requested page
+                td= requested_page
+            tr
+                th error code
+                td= error_code
+            tr
+                th error message
+                td= error_message

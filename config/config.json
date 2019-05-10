@@ -1,0 +1,16 @@
+{
+    "server": {
+        "http_port": "8080",
+        "https_port": "443"
+    },
+    "registration_pattern": {
+        "string_pattern": "[a-zA-Z][a-zA-Z0-9?!@#$%&*]*", 
+        "usable_caracters": " a - z, A - Z, 0 - 9, ? ! @ # $ % & *"
+    },
+    "session": {
+        "cookieName": "registration-login-session",
+        "secret": "corhor55hg9sh3f08v049y56bn303d",
+        "duration": 300000,
+        "activeDuration": 60000
+    }
+}

@@ -1,0 +1,80 @@
+@import "./navigation_bar.css";
+@import "./inner_navigation_bar.css";
+@import "./login_form.css";
+@import "./error.css";
+@import "./popups.css";
+@import "./info.css";
+
+body {
+    width: auto;
+    height: auto;
+    max-width: 500px;
+    max-height: 600px;
+    margin: auto;
+}
+
+header {
+    background-color: cyan;
+    box-shadow: 2px 2px 4px darkcyan;
+}
+
+header > * {
+    text-decoration: none;
+}
+
+header h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+
+h3, h4 {
+    text-decoration: underline;
+}
+
+footer {
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: black;
+    float: bottom;
+
+    margin-bottom: 10%;
+}
+
+footer p {
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    color: grey;
+}
+
+div > h3 {
+    text-align: center;
+}
+
+.container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.alignment_row {
+    display: flex;
+    justify-content: flex-start;
+}
+
+table.usersList {
+    min-width: 200px;
+    margin: auto;
+    display: table;
+    border-collapse: collapse;
+    border: 1px grey solid;
+}
+
+table.usersList tr:nth-child(even) {
+    background-color: lightgrey;
+}
+
+th {
+    background-color: aquamarine;
+}

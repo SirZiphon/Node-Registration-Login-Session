@@ -1,0 +1,30 @@
+extends ./baseTemplates/base.jade
+
+block main_content
+    .login_form
+        form(method="post" action="/user/registration")
+            .input_box
+                .alignment_row
+                    h5 Username    
+                    .popup(name="popup_block") 
+                        h5 ?
+                        span(class="popup_text" name="popup_span") Usable Caracters: #{message_pattern} 
+                input(type="text" id="username" name="username" required)
+            .input_box
+                .alignment_row
+                    h5 Password
+                    .popup(name="popup_block") 
+                        h5 ?
+                        span(class="popup_text" name="popup_span") Usable Caracters: #{message_pattern} 
+                input(type="password" id="password" name="password" required) 
+            .input_box
+                h5 Confirm Password
+                input(type="password" id="confirm_password" name="confirm_password" required)
+            .submit_box
+                input(type="submit" id="submit" value="Register")
+    script(src="/scripts/registration_page/registration.js" type="module")
+    
+        
+            
+
+        

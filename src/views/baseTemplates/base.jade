@@ -1,0 +1,30 @@
+doctype html
+html
+    head
+        title #{title}
+        link(rel="stylesheet", href="/css/base.css")
+        link(rel="apple-touch-icon", sizes="180x180", href="/favicon/apple-touch-icon.png")
+        link(rel="icon", type="image/png", sizes="32x32", href="/favicon/favicon-32x32.png")
+        link(rel="icon", type="image/png", sizes="16x16", href="/favicon/favicon-16x16.png")
+        link(rel="manifest", href="/webmanifest/site.webmanifest")
+    body
+        header
+            a(href="/")
+                h1 Registration, Login and Sessions
+        .navigation_bar
+            include ./navigation_bar
+        if user 
+            .inner_navigation_bar
+                include ./inner_navigation_bar
+        .container 
+            .main_content
+                block main_content
+
+        if alert_message
+            script.
+                alert("#{alert_message}");
+            
+        footer
+            p Developed by #[a(href="https://github.com/SirZiphon") SirZiphon] under MIT license for learning purposes
+         
+            

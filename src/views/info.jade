@@ -1,0 +1,23 @@
+extends ./baseTemplates/base.jade
+
+block main_content
+    .info
+        table
+            tr
+                th Node Version
+                td= node_version
+            tr
+                th Express Package Version
+                td= express_package_version
+            tr
+                th Jade Package Version
+                td= jade_package_version
+            tr
+                th MySql Package Version
+                td= mysql_package_version
+            tr
+                th Client-sessions Version
+                td= client_sessions_package_version
+            tr
+                th MySql Version
+                td= mysql_version

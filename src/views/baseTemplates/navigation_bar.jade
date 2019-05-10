@@ -1,0 +1,10 @@
+ul
+    if user
+        li(class="user") Welcome #{user} (#[a(href="/user/logout") logout])
+    else
+        li
+            a(href="/user/login") Login
+        li
+            a(href="/user/registration") Registration
+    li(class="right_pos")
+        a(href="/info") Info

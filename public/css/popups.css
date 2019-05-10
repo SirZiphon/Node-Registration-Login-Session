@@ -1,0 +1,47 @@
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.popup .popup_text {
+    visibility: hidden;
+    width: 200px;
+    padding: 5px 0px 5px 0px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    margin-left: -100px;
+    left: 50%;
+    bottom: 100%;
+    text-align: center;
+    position: absolute;
+    opacity: 0.75;
+    box-shadow: 2px 2px 4px darkgray;
+}
+
+.popup .display_popup {
+    visibility: visible;
+    animation: display_popup_animation 1s;
+}
+
+.popup .popup_text:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+    box-shadow: 2px 2px 4px darkgray;
+}
+
+@keyframes display_popup_animation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.75;
+    }
+}

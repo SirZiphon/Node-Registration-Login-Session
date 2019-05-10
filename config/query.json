@@ -1,0 +1,7 @@
+{
+    "users": {
+        "insert": "INSERT INTO users VALUES (?, ?)",
+        "select_login": "SELECT username FROM users WHERE username = ? AND password = ?",
+        "select_session": "SELECT username FROM users WHERE username = ?"
+    }    
+}
