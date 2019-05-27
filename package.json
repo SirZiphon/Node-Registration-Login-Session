@@ -8,6 +8,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SirZiphon/Registration-Login-Session.git"
+  },
   "author": "SirZiphon (https://github.com/SirZiphon)",
   "license": "MIT",
   "dependencies": {
