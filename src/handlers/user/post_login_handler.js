@@ -10,7 +10,8 @@ module.exports = function (request, response) {
         if (err) {
             response.render('login', {
                 alert_message: err.message,
-                title: 'login'
+                title: 'login',
+                base_path: request.baseUrl
             });
             return;
         }
@@ -19,6 +20,7 @@ module.exports = function (request, response) {
 
         response.render('index', {
             title: 'Home page',
+            base_path: request.baseUrl,
             user: request.body.username
         });
         return;

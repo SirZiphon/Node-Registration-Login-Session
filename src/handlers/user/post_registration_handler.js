@@ -9,6 +9,7 @@ module.exports = function (request, response) {
         if(err) {
             response.render('registration', {
                 title: 'Registration',
+                base_path: request.baseUrl,
                 alert_message: err.message
             });
             return;
@@ -16,6 +17,7 @@ module.exports = function (request, response) {
 
         response.render('registration', {
             title: 'Registration',
+            base_path: request.baseUrl,
             alert_message: 'Insertion successfull!'
         });
         return;
